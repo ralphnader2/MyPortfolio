@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="MyPortfolio.css">
+        <script src="MyPortfolio.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("xemLwvs7nSo-fKKS9");
+            })();
+        </script>
+    </head>
+    <body>
+        <nav>
+            <h2 id="logo">Contact</h2>
+            <ul class="navigation-items">
+                <li class="navigation-item"><a href="MyPortfolio.html">About Me</a></li>
+                <li class="navigation-item"><a href="Projects.html">Projects</a></li>
+                <li class="navigation-item"><a href="Skills.html">Skills</a></li>
+                <li class="navigation-item"><a href="Contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <section class="Contact">
+                <h2>Contact Me by leaving your name, email and a message</h2>
+                <div class="intro">
+                <div class="form-group">
+                    <h5 for="name">Name</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                
+                    <h5 for="email">Email</h5>
+                    <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+                
+                    <h5 for="message">Message</h5>
+                    <textarea id="message" rows="7" cols="50" class="form-control"></textarea>
+                    <button class="button" onclick="sendMail()">Submit</button>
+                </div>
+                <img src="phone.png" alt="A picture of a phone" class="portrait-four"/>
+            </div>
+        </section>
+        <nav>
+            <h4>You can also contact me or follow me on facebook, instagram or linkedln</h4>
+            <div class="nav-items">
+                <a href="https://www.facebook.com/ralph.martinez.102"><img src="./Facebook-logo.png" id="facebook"/></a>
+                <a href="https://www.instagram.com/ralphnationader/"><img src="./instagram-logo.png" id="instagram"/></a>
+                <a href="https://www.linkedin.com/in/rafael-martinez-030014b8/"><img src="./linkedln.png" id="linkedln"/></a>
+            </div>
+        </nav>
+
+    </body>
+</html>
